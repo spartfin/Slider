@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сладер</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Разная реализация слайдеров на JavaScript</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="visually-hidden">Первый сладер</h2>
+      <div class="slider__one">
+        <div class="slider__content">
+          <button type="button" class="left__arrow">
+            <img src="img/prev_arrow.png" width="128" height="128" alt="Стрелочка влево">
+          </button>
+          <ul class="slider__case">
+            <li class="slide slide__Active">1</li>
+            <li class="slide">2</li>
+            <li class="slide">3</li>
+            <li class="slide">4</li>
+          </ul>
+          <button type="button" class="right__arrow">
+            <img src="img/next_arrow.png" width="128" height="128" alt="Стрелочка вправо">
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="sliders.js"></script>
+
+</body>
+
+</html>
+
+<!--<section class="slider__two">
+    <ul class="slider_nav">
+      <li class="sn_item sn_itemActive"></li>
+      <li class="sn_item"></li>
+      <li class="sn_item"></li>
+      <li class="sn_item"></li>
+    </ul>
+  </section>-->
