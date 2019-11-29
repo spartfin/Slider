@@ -90,6 +90,7 @@ button {
   cursor: pointer;
   width: 128px;
   height: 128px;
+  outline: none;
 }
 
 .slide {
@@ -106,7 +107,8 @@ button {
   opacity: 1;
 }
 
-/*.slider_nav {
+/*Второй слайдер*/
+.slider_nav {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -116,13 +118,13 @@ button {
 .sn_item {
   margin: 0 6px;
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #ddd;
   border-radius: 100%;
 }
 
 .sn_itemActive {
-  background: #000;
+  background-color: chartreuse;
   border-color: #000;
-}*/
+}

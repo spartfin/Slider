@@ -32,29 +32,24 @@ var changeActiveSlide = function () {
   }
 };
 
-/* Slider two*/ /*
-var active = 0; // переменная для текущего и предыдущего активного слайда
-var prev = 0; // переменная для текущего и предыдущего активного слайда
+/* Slider two*/
+
+var activeItem = 0;
+var prevItem = 0;
 
 var navs = document.getElementsByClassName('sn_item');
 for (var i = 0; i < navs.length; i++) {
   (function (i) {
     navs[i].addEventListener('click', function () {
-      prev = active;
-      active = i;
-      civeSlidehangeAct(prev);
+      prevItem = activeItem;
+      activeItem = i;
+      changeActiveItem();
     });
   })(i);
 }
-// Добавляем в функцию 2 строчки для изменения активного класса кнопок
-var changeActiveSlide = function () {
-  slides[prev].classList.remove('slideActive');
-  slides[active].classList.add('slideActive');
-  navs[prev].classList.remove('sn_itemActive');
-  navs[active].classList.add('sn_itemActive');
 
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.transform = 'translate(' + -(active * 100) + '%)';
-  }
+var changeActiveItem = function () {
+  navs[prevItem].classList.remove('sn_itemActive');
+  navs[activeItem].classList.add('sn_itemActive');
 };
-*/
+
